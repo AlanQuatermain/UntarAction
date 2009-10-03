@@ -2,6 +2,11 @@ h2. Untar action for Automator
 
 This project implements a simple 'untar' action for use in Automator workflows. It performs essentially the same task as 'Open Finder Items', with the exception that it won't causes the Finder to spawn a new window for each tar file it expands.
 
-It will accept a list of files (which should all be tar files) as either URLs or paths, and will return whichever of those items was successfully extracted. It will stop upon any failure; this may become an option in future.
+It will accept a list of files (which should all be tar files) as either URLs or paths, and will return whichever of those items was successfully extracted.
 
 This item is required for the "Download APSL Source":http://github.com/AlanQuatermain/DarwinSourceDownloader workflow.
+
+h3. Revision History
+
+|^{width: 40pt}. *1.0*|Initial Revision|
+|^{width: 40pt}. *1.0.1*|User can now opt to continue or stop when an extraction error occurs (previous builds would always stop).|
