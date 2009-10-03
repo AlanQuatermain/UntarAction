@@ -11,6 +11,8 @@
 
 @implementation UntarAction
 
+@synthesize stopOnError;
+
 - (id) runWithInput: (id) input fromAction: (AMAction *) anAction error: (NSDictionary **) errorInfo
 {
 	NSMutableArray * output = [[NSMutableArray alloc] initWithCapacity: [input count]];
@@ -38,7 +40,7 @@
 		[task launch];
 		
 		[task waitUntilExit];
-		if ( [task terminationStatus] != 0 )
+		if ( ([task terminationStatus] != 0) && (self.stopOnError) )
 		{
 			*stop = YES;
 		}

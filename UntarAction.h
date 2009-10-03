@@ -9,7 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import <Automator/AMBundleAction.h>
 
-@interface UntarAction : AMBundleAction 
+@interface UntarAction : AMBundleAction
+{
+	BOOL stopOnError;
+}
+
+@property (assign) BOOL stopOnError;
 
 - (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
 
