@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMAccepts</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Optional</key>
+		<true/>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+		</array>
+	</dict>
+	<key>AMCategory</key>
+	<string>AMCategoryUtilities</string>
+	<key>AMDefaultParameters</key>
+	<dict/>
+	<key>AMDescription</key>
+	<dict>
+		<key>AMDInput</key>
+		<string>Files</string>
+		<key>AMDResult</key>
+		<string>Files</string>
+		<key>AMDSummary</key>
+		<string>Takes a list of tar files and opens each of them using the command line. Returns a list containing the paths/URLs of each successfully-opened tarfile.</string>
+	</dict>
+	<key>AMKeywords</key>
+	<array/>
+	<key>AMName</key>
+	<string>Untar</string>
+	<key>AMProvides</key>
+	<dict>
+		<key>Container</key>
+		<string>List</string>
+		<key>Types</key>
+		<array>
+			<string>com.apple.cocoa.path</string>
+			<string>com.apple.cocoa.url</string>
+		</array>
+	</dict>
+	<key>AMRequiredResources</key>
+	<array/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>1.0, Copyright © 2009 Morfunk, LLC, All Rights Reserved</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Automator.${PRODUCT_NAME:identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2009 Jim Dovey. All Rights Reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>UntarAction</string>
+</dict>
+</plist>
